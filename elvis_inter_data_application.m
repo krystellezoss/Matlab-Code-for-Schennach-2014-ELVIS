@@ -61,7 +61,8 @@ nreps = 50;
 %Matrix to store objective function values over grid
 soln = zeros(nreps, 6);
 tic
-for j = 1:nreps	
+for j = 1:nreps
+	
     size_ = size(Moment(U, Z, thetao));
 	dimf = size_(1);
     gamo = ones(1,dimf);
